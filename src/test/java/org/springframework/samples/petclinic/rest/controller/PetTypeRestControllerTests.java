@@ -102,7 +102,7 @@ class PetTypeRestControllerTests {
         	.accept(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(status().isOk())
             .andExpect(content().contentType("application/json"))
-            .andExpect(jsonPath("$.id").value(1))
+            .andExpect(jsonPath("$.id").value(2))
             .andExpect(jsonPath("$.name").value("cat"));
     }
 
